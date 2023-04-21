@@ -1,9 +1,11 @@
 <?php
 
+
 use Leandro\mvc\libs\Controller;
 use Leandro\mvc\models\Auto;
 
 //namespace Leandro\mvc\controller;
+
 
 class Index_Controller extends Controller
 {
@@ -14,11 +16,10 @@ class Index_Controller extends Controller
 
     public function index()
     {
-        echo "desde index";
-        //recibe parametros llama a la vista
-        $auto = new Auto("hola");
-        $info = $auto->info();
-        $this->render("index/index", $auto);
+        
+        //$auto = new Auto("hola");
+        
+        $this->render("index/index");
 
     }
     public function saludar()
@@ -26,5 +27,3 @@ class Index_Controller extends Controller
         //recibe parametros llama a la vista
     }
 }
-
-;

@@ -5,16 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Pagina principal</title>
 </head>
 
 <body>
-  <h1>hola desde vista</h1>
-  <li><a href="index.php?c=articulos&m=listar">
-      listar articulos
-    </a></li>
+  <h1>Articulos</h1>
   <?php
+  echo "<pre>";
 var_dump($this->data);
+echo "</pre>";
 ?>
 </body>
 

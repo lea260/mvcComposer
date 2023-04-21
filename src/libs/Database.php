@@ -1,6 +1,8 @@
 <?php
+namespace Leandro\mvc\libs;
 
 use PDO;
+use PDOException;
 
 class Database
 {
@@ -9,6 +11,8 @@ class Database
     private $port;
     private $db;
     private $charset;
+    private $password;
+    private $user;
 
     public function __construct()
     {
@@ -23,7 +27,7 @@ class Database
     public function connect()
     {
         try {
-            $connection = "mysql:host={$this->host};port={$this->host};dbname={$this->db};charset={$this->charset}";
+            $connection = "mysql:host={$this->host};port={$this->port};dbname={$this->db};charset={$this->charset}";
             $options    = [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_EMULATE_PREPARES => false,
@@ -34,5 +38,4 @@ class Database
             print_r('Error connection: ' . $e->getMessage());
         }
     }
-
 }
