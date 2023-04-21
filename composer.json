@@ -1,0 +1,12 @@
+{
+    "name": "lcalvetti/mvc",
+    "description": "mvc",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Leandro\\mvc\\": "src/",
+            "Leandro\\mvc\\controller\\": "src/controller/"
+        }
+    },
+    "require": {}
+}
