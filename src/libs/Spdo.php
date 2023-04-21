@@ -9,7 +9,7 @@ class Spdo
     private $db;
 
  
-    public function __construct()
+    private function __construct()
     {
        $this->db= new Database();
         //$config = Config::singleton();
@@ -17,7 +17,7 @@ class Spdo
  
     public static function singleton()
     {
-        if(self::$instance == null)
+        if(!isset(self::$instance))
         {
             self::$instance = new self();
         }
