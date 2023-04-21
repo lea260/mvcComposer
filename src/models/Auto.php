@@ -15,5 +15,9 @@ class Auto
     {
         echo "informacion auto";
     }
+    public function listarAuto()
+    {
+        # code...
+    }
 
 }

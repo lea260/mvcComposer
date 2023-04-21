@@ -4,8 +4,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Leandro\\mvc\\": "src/",
-            "Leandro\\mvc\\controller\\": "src/controller/"
+            "Leandro\\mvc\\": "src/"
         }
     },
     "require": {}
