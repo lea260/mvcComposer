@@ -1,4 +1,5 @@
 <?php
+
 namespace Leandro\mvc\libs;
 
 class Controller
@@ -7,7 +8,6 @@ class Controller
 
     public function __construct()
     {
-
     }
 
     public function render($vista, $data = "")
@@ -17,4 +17,3 @@ class Controller
         # code...
     }
 }
-;

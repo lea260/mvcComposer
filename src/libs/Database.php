@@ -27,7 +27,6 @@ class Database
     public function connect()
     {
         try {
-            $hola = false;
             $connection = "mysql:host={$this->host};port={$this->port};dbname={$this->db};charset={$this->charset}";
             $options    = [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
