@@ -14,8 +14,18 @@
       listar articulos
     </a></li>
   <?php
-var_dump($this->data);
-?>
+  var_dump($this->data);
+  ?>
+
+  <form action="index.php?c=test&m=hola" method="post">
+    <label for="nombre">
+      <input type="text" id="nombre" name="nombre" value="Diego">
+    </label>
+    <label for="apellido">
+      <input type="text" id="hola" name="apellido" value="Forlan">
+    </label>
+    <input type="submit" value="enviar">
+  </form>
 </body>
 
 </html>
