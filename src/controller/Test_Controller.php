@@ -18,18 +18,11 @@ class Test_Controller extends Controller
     $this->render('articulos/index');
   }
 
-  public function nuevo($param = null)
-  {
 
-    //lista los articulos
-    $this->render('articulo/nuevo');
-  } //end listar
   public function hola($param = null)
   {
-    echo "<pre>";
-    var_dump($_POST);
-    var_dump($_GET);
-    echo "</pre>";
+
+    $this->render('test/hola');
   } //end listar
 
 
