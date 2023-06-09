@@ -1,6 +1,7 @@
 <?php
 
 
+
 use Leandro\mvc\libs\Controller;
 use Leandro\mvc\models\Auto;
 
@@ -16,11 +17,10 @@ class Index_Controller extends Controller
 
     public function index()
     {
-        
-        //$auto = new Auto("hola");
-        
-        $this->render("index/index");
 
+        //$auto = new Auto("hola");
+
+        $this->render("index/index");
     }
     public function saludar()
     {
